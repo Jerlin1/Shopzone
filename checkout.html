@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - ShopZone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container header-container">
+      <h1>ShopZone</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="checkout.html" class="active">Cart (<span id="cartCount">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="center-text">Your Cart</h2>
+      <ul id="cart-items" class="cart-list"></ul>
+      <p class="total">Total: ₹<span id="total">0.00</span></p>
+      <button class="checkout-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ShopZone</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
